@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS ORDER_ITEM;
+
+CREATE TABLE IF NOT EXISTS ORDER_ITEM (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  order_id INT NOT NULL,
+  product_code VARCHAR(250) NOT NULL,
+  product_name varchar(250) NOT NULL,
+  product_quantity INT NOT NULL
+);
